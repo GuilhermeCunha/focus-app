@@ -1,36 +1,44 @@
-# TypeScript Example
+# Focus App
 
-<p>
-  <!-- iOS -->
-  <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  <!-- Android -->
-  <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  <!-- Web -->
-  <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-</p>
-
-```sh
-npx create-react-native-app -t with-typescript
-```
-
-TypeScript is a superset of JavaScript which gives you static types and powerful tooling in Visual Studio Code including autocompletion and useful inline warnings for type errors.
+Focus is an app created with Expo (React Native) + Redux + Cognito.
 
 ## 🚀 How to use
 
-#### Creating a new project
+## Install dependencies
+```bash
+yarn install
+```
 
-- Install the CLI: `npm i -g expo-cli`
-- Create a project: `npx create-react-native-app -t with-typescript`
-- `cd` into the project
+## Configure Amplify
+### Install amplify CLI
+```bash
+npm i -g @aws-amplify/cli
+```
 
-### Adding TypeScript to existing projects
+### Configure amplify CLI
+You can choose your preferred form of authentication. (I prefer access keys)
+```bash
+amplify configure
+```
 
-- Create a blank TypeScript config: `touch tsconfig.json`
-- Run `expo start` to automatically configure TypeScript
-- Rename files to TypeScript, `.tsx` for React components and `.ts` for plain typescript files
+### Init project
+```bash
+amplify init
+```
 
-> 💡 You can disable the TypeScript setup in Expo CLI with the environment variable `EXPO_NO_TYPESCRIPT_SETUP=1 expo start`
+### Add auth
+You must check to use the default settings, that you want to use email as an identifier, and that you do not want to use advanced settings
 
-## 📝 Notes
+```bash
+amplify add auth
+```
 
-- [Expo TypeScript guide](https://docs.expo.dev/versions/latest/guides/typescript/)
+
+## Run project
+```bash
+yarn start
+```
+
+
+## Useful links
+[Expo Blog](https://blog.expo.dev/how-to-build-cloud-powered-mobile-apps-with-expo-aws-amplify-2fddc898f9a2)

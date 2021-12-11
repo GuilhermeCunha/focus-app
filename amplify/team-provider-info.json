@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-focusapp-dev-13333-authRole",
+      "UnauthRoleArn": "arn:aws:iam::645602331541:role/amplify-focusapp-dev-13333-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::645602331541:role/amplify-focusapp-dev-13333-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-focusapp-dev-13333-deployment",
+      "UnauthRoleName": "amplify-focusapp-dev-13333-unauthRole",
+      "StackName": "amplify-focusapp-dev-13333",
+      "StackId": "arn:aws:cloudformation:us-east-1:645602331541:stack/amplify-focusapp-dev-13333/84500610-5a3b-11ec-956c-1228a440ace9",
+      "AmplifyAppId": "d1vl69qo4dkrv6"
+    },
+    "categories": {
+      "auth": {
+        "focusapp2b5e63af": {}
+      }
+    }
+  }
+}
