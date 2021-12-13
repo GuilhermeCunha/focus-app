@@ -1,10 +1,11 @@
 import React from "react";
-import { useSelector } from "../store/useSelector";
+import { NavigationContainer } from "@react-navigation/native";
 import AuthenticatedRoutes from "./authenticated-routes";
 
 export default function Routes() {
-  const selector = useSelector((state) => state);
-  console.debug("Redux Data: ", selector);
-  // const { authenticated } = selector.auth.authenticated;
-  return <AuthenticatedRoutes />;
+  return (
+    <NavigationContainer>
+      <AuthenticatedRoutes />
+    </NavigationContainer>
+  );
 }
